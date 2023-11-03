@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient(to right, #2FCDFF, #FF0000);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.rectangle {
+    width: 345px;
+    height: 502px;
+    background-color: #FFFFFF;
+    position: relative; /* Added position relative for positioning */
+}
+
+.login-heading {
+    position: absolute; /* Position the heading absolutely within the rectangle */
+    top: 10px; /* Adjust the top position as needed */
+    left: 10px; /* Adjust the left position as needed */
+    font-weight: bold; /* Make the text bold */
+    margin: 0; /* Remove any default margins */
+    font-family: 'Circular', sans-serif; /* Replace "Your Font Family" with the desired font */
+    margin: 0;
+}
+
+.login-container {
+    background-color: #FFFFFF; /* Change to an opaque white color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.email-heading {
+    position: absolute;
+    top: 80px; /* Adjusted to be 50 pixels below the login text */
+    left: 10px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    font-size: 18px ;
+    font-weight: lighter;
+    
+}
+
+.email-input {
+    position: absolute;
+    top: 110px; /* Positioned 20 pixels below the email text */
+    left: 10px;
+    width: 300px;
+    height: 40px;
+    border: none; /* Remove borders */
+    border-radius: 0; /* Remove border radius */
+    padding: 10px; /* Add some padding for a sleek look */
+    background-color: #f1f1f1; /* Light gray background color */
+}
+
+
+.password-input {
+    position: absolute;
+    top: 230px; /* Positioned 20 pixels below the password text */
+    left: 10px;
+    width: 300px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius:0%;
+    padding: 10px;
+}
+
+/* Your existing CSS rules */
+
+.show-password-container {
+    position: absolute;
+    top: 295px; /* Adjusted to be 50 pixels below the password input */
+    left: 10px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+/* Your existing CSS rules */
+
+/* Your existing CSS rules */
+
+.login-button {
+    background-color: rgb(245, 89, 89); /* Red background color */
+    color: #FFFFFF; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px; /* Adjust padding for a bigger button */
+    font-size: 18px; /* Increase font size */
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a hover effect */
+    position: absolute; /* Position the button absolutely */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+    top: 370px;
+    font-family: 'Circular', sans-serif;
+    font-weight: bold;
+}
+
+
+.login-button:hover {
+    background-color: #ffffff; /* Red background color on hover */
+    color:black
+}

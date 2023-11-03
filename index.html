@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>AC</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="rectangle">
+            <h1 class="login-heading">Login</h1>
+            <h2 class="email-heading">Username</h2>
+            <input type="text" class="email-input" placeholder="Your username" />
+            <h2 style="position: absolute;
+            top: 200px; /* Adjusted to be 50 pixels below the login text */
+            left: 10px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            font-weight: lighter;">Password</h2>
+            <input type="password" class="password-input" id="passwordField" placeholder="Your password" />
+            <div class="show-password-container">
+                <input type="checkbox" id="showPassword"> Show Password
+            </div>
+            <button class="login-button" id="login-button">LOGIN</button>
+        </div>
+    </div>
+    <script>        
+    
+    document.getElementById("login-button").addEventListener("click", function () {
+        
+        
+        const username = document.querySelector('.email-input').value;
+        const password = document.getElementById("passwordField").value;
+
+        if (username === "ACMETER12" && password === "acpassword") {
+            // Redirect to the ThingSpeak graphs page after successful login
+            window.location.href = "dashboard.html";
+        } else {
+            // Handle invalid login
+            alert("Invalid username or password. Please try again.");
+        }
+    });
+</script>
+</body>
+</html></script>
+
+    <script src="script.js"></script> 
+    
+</body>
+</html>
